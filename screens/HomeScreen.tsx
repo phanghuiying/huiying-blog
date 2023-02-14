@@ -14,9 +14,10 @@ import {
 import * as React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import EmojiReaction from "@/components/EmojiReaction";
+import JokeOfTheDay from "@/components/JokeOfTheDay";
+import MessageForm from "@/components/MessageForm";
 
 const HomeScreen: NextPage = () => {
-
   return (
     <>
       <Head>
@@ -65,6 +66,8 @@ const HomeScreen: NextPage = () => {
               </HStack>
               <HStack pt={8}>
                 <EmojiReaction />
+                <JokeOfTheDay />
+                <MessageForm />
               </HStack>
             </VStack>
           </Flex>
