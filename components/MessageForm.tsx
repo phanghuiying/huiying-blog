@@ -9,7 +9,7 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useState } from "react";
 
 const MessageForm = (): ReactElement => {
   const [name, setName] = useState<string>("");
@@ -45,6 +45,7 @@ const MessageForm = (): ReactElement => {
           <Input
             type="text"
             value={name}
+            data-testid="name"
             onChange={(e) => {
               setIsInitialState(false);
               setName(e.target.value);
@@ -55,13 +56,16 @@ const MessageForm = (): ReactElement => {
               }
             }}
           />
-          <FormErrorMessage role="alert">Name is required.</FormErrorMessage>
+          <FormErrorMessage data-testid="name-error">
+            Name is required.
+          </FormErrorMessage>
         </FormControl>
         <FormControl isInvalid={!isInitialState && !isMessageValid}>
           <FormLabel>Message</FormLabel>
           <Textarea
             // type="string"
             value={message}
+            data-testid="message"
             onChange={(e) => {
               setIsInitialState(false);
               setMessage(e.target.value);
@@ -72,7 +76,7 @@ const MessageForm = (): ReactElement => {
               }
             }}
           />
-          <FormErrorMessage role="alert">
+          <FormErrorMessage data-testid="msg-error">
             Message cannot be empty.
           </FormErrorMessage>
         </FormControl>

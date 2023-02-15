@@ -57,10 +57,15 @@ const HomeScreen: NextPage = () => {
                 <a
                   href="https://www.linkedin.com/in/phang-hui-ying-ba3567a6/"
                   target="_blank"
+                  role={"linkedin"}
                 >
                   <BsLinkedin size="1.25em" className="icon" />
                 </a>
-                <a href="https://github.com/phanghuiying" target="_blank">
+                <a
+                  href="https://github.com/phanghuiying"
+                  target="_blank"
+                  role={"github"}
+                >
                   <BsGithub size="1.25em" className="icon" />
                 </a>
               </HStack>
