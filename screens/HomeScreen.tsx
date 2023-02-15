@@ -44,7 +44,7 @@ const HomeScreen: NextPage = () => {
               <Image
                 borderRadius="full"
                 boxSize="200px"
-                src="/huiying.jpg"
+                src="./huiying.jpg"
                 alt="Hui Ying"
               />
               <Text pt={5} as="b" color="pink.500" fontSize="2xl">
