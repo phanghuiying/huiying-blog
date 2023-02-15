@@ -2,7 +2,7 @@
   "name": "huiying-blog",
   "homepage": "https://phanghuiying.github.io/huiying-blog",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d .next",
