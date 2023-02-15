@@ -1,8 +1,11 @@
 {
   "name": "huiying-blog",
+  "homepage": "https://phanghuiying.github.io/huiying-blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -33,6 +36,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "gh-pages": "^5.0.0",
     "jest": "^29.4.2",
     "jest-environment-jsdom": "^29.4.2"
   }
