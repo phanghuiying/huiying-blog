@@ -81,6 +81,18 @@ jobs:
         with:
           path: ./out
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: npm run test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run linter
+        run: npm run lint
+
   # Deployment job
   deploy:
     environment:
