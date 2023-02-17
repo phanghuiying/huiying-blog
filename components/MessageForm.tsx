@@ -38,7 +38,7 @@ const MessageForm = (): ReactElement => {
     <>
       <VStack pl={5}>
         <Text fontSize="lg" as="b">
-          Post me a message! 😄
+          Post me a message! 🍉
         </Text>
         <FormControl isInvalid={!isInitialState && !isNameValid}>
           <FormLabel>Name</FormLabel>
@@ -84,7 +84,7 @@ const MessageForm = (): ReactElement => {
           mt={4}
           colorScheme="pink"
           type="submit"
-          // isDisabled={!isFormSubmitButtonEnabled}
+          isDisabled={!isFormSubmitButtonEnabled}
           onClick={handleSubmit}
           role="button"
         >
