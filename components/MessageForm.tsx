@@ -84,7 +84,7 @@ const MessageForm = (): ReactElement => {
           mt={4}
           colorScheme="pink"
           type="submit"
-          isDisabled={!isFormSubmitButtonEnabled}
+          // isDisabled={!isFormSubmitButtonEnabled}
           onClick={handleSubmit}
           role="button"
         >
