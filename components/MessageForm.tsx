@@ -38,7 +38,7 @@ const MessageForm = (): ReactElement => {
     <>
       <VStack pl={5}>
         <Text fontSize="lg" as="b">
-          Send me a message! 🍉
+          Send me a message! 🤓
         </Text>
         <FormControl isInvalid={!isInitialState && !isNameValid}>
           <FormLabel>Name</FormLabel>
